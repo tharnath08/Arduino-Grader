@@ -9,9 +9,17 @@ Open Command Prompt and install the arduino:avr platform:
 
 Clone the repo and navigate to the folder.
 
-https://github.com/tharnath08/ArduinoGrader
+    git clone https://github.com/tharnath08/ArduinoGrader.git
+    cd ArduinoGrade
 
-Edit the values in the these [lines](https://github.com/tharnath08/ArduinoGrader/blob/main/arduino_grader.py#L11-L17) based on the assignment.
+
+In the ```arduino_grader.py```, update the following lines based on the assignment.
+```python
+# port = "/dev/ttyACM0"  # Update the tty port of the arduino here (Linux/Mac)
+port = "COM8"  # Update the COM port of the arduino here (Windows)
+baud_rate = 9600  # Update based on your assignment requirements
+timeout = 10  # Time to monitor the serial port for (Max time the arduino takes to print all the data)
+```
 
 Install the required packages:
 
