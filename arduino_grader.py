@@ -11,8 +11,8 @@ board_fqbn = "arduino:avr:uno"
 ####################
 #Update These Fields
 ####################
-port = "/dev/ttyACM0"  # Update the tty port of the arduino here (Linux/Mac)
-# port = "COM8"  # Update the COM port of the arduino here (Windows)
+# port = "/dev/ttyACM0"  # Update the tty port of the arduino here (Linux/Mac)
+port = "COM8"  # Update the COM port of the arduino here (Windows)
 baud_rate = 9600  # Update based on your assignment requirements
 timeout = 10  # Time to monitor the serial port for (Max time the arduino takes to print all the data)
 
